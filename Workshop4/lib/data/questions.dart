@@ -4,30 +4,29 @@ const questions = [
   QuestionModel(
       "What is Flutter?",
       [
-        "A programming language",
-        "A mobile app development framework",
-        "A database management system",
-        "An operating system"
+        "A) An online gaming platform",
+        "B) A mobile application development framework",
+        "C) A desktop operating system",
+        "D) A cloud storage service"
       ],
-      "A mobile app development framework"),
-  QuestionModel("Which programming language is used for Flutter development?",
-      ["Java", "Swift", "Dart", "Python"], "Dart"),
+      "B) A mobile application development framework"),
   QuestionModel(
-      "What is the purpose of the Flutter Engine?",
+      "On which platforms can Flutter applications run?",
       [
-        "To compile Dart code to machine code",
-        "To provide a library of pre-built widgets",
-        "To manage the state of the application",
-        "To handle HTTP requests"
+        "A) Only iOS",
+        "B) Only Android",
+        "C) Both iOS and Android",
+        "D) Only Windows"
       ],
-      "To compile Dart code to machine code"),
+      "C) Both iOS and Android"),
+  QuestionModel("What programming language does Flutter use?",
+      ["A) Java", "B) Python", "C) Dart", "D) C#"], "C) Dart"),
   QuestionModel(
-      "What is a widget in Flutter?",
-      [
-        "A block of code that performs a specific task",
-        "A type of data structure",
-        "A method for handling user input",
-        "A visual element in the user interface"
-      ],
-      "A visual element in the user interface"),
+      " What term is used in Flutter for developing the user interface?",
+      ["A) Scaffold", "B) Widget", "C) Scaffold", "D) Screen"],
+      "B) Widget"),
+  QuestionModel(
+      " What methods can be used to improve application performance in Flutter?",
+      ["A) Only using large image files", "B) Not using state management techniques", "C) Optimizing widget trees", "D) Not using any animations"],
+      "C) Optimizing widget trees"),
 ];

@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.deepPurpleAccent,
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // asset

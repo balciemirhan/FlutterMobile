@@ -17,7 +17,7 @@ class _QuizScreenState extends State<QuizScreen> {
         currentQuestionIndex++;
       });
     } else {
-
+      // main menu alanı:
     }
   }
 
@@ -25,19 +25,23 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(questions[currentQuestionIndex].question),
-            ...questions[currentQuestionIndex].answers.map((answer) {
-              return ElevatedButton(
-                onPressed: () {
-                  goToNextQuestion();
-                },
-                child: Text(answer),
-              );
-            })
-          ],
+        child: Container(
+          margin: const EdgeInsets.all(40),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children:<Widget> [
+              Text(questions[currentQuestionIndex].question),
+              ...questions[currentQuestionIndex].answers.map((answer) {
+                return ElevatedButton(
+                  onPressed: () {
+                    goToNextQuestion();
+                  },
+                  child: Text(answer),
+                );
+              })
+            ],
+          ),
         ),
       ),
     );

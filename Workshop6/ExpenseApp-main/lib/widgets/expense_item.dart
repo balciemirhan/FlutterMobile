@@ -20,7 +20,7 @@ class ExpenseItem extends StatelessWidget {
                      ${expense.price.toStringAsFixed(2)}
                 const Spacer(),
                 Text(
-                  DateFormat.yMd().format(expense.date),
+              DateFormat.yMd().format(expense.date),
                 ),
               ],
             ),

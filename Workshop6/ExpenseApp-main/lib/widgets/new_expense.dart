@@ -13,6 +13,7 @@ class _NewExpenseState extends State<NewExpense> {
   final _expensePriceController = TextEditingController();
   var _selectedDate = DateTime.now();
 
+
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
         context: context,
@@ -27,16 +28,17 @@ class _NewExpenseState extends State<NewExpense> {
     }
   }
 
+  // open date picker
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      width: double.infinity, 
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(children: [
           TextField(
             controller: _expenseNameController,
-            maxLength: 50,
+            maxLength: 40,
             decoration: const InputDecoration(labelText: "Harcama Adı"),
           ),
           TextField(
@@ -56,12 +58,21 @@ class _NewExpenseState extends State<NewExpense> {
           ElevatedButton(
             onPressed: () {
               print(
-                  "Kaydedilen değer: ${_expenseNameController.text} ${_expensePriceController.text}");
+                  "Kaydedilen değer: ${_expenseNameController
+                      .text} ${_expensePriceController.text}");
             },
-            child: const Text("Ekle"),
-          ),
+           ),
         ]),
       ),
     );
   }
+
+  /*
+  *
+  *final Category category;
+  * final List <Expense> expenses;
+  *
+  * double 
+  * */
 }
+

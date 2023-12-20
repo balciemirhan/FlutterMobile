@@ -14,17 +14,17 @@ const categoryIcons = {
 };
 
 class Expense {
-  Expense(
-      {required this.name,
-      required this.price,
-      required this.date,
-      required this.category})
+  Expense({required this.name,
+    required this.price,
+    required this.date,
+    required this.category})
       : id = uuid.v4();
   final String id;
   final String name;
   final double price;
   final DateTime date;
   final Category category;
-
+// belirli kategoriler
+// enum
 }
 

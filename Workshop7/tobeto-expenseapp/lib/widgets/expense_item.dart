@@ -20,7 +20,7 @@ class ExpenseItem extends StatelessWidget {
               children: [
                 Text("₺${expense.price.toStringAsFixed(2)}"),
                 const Spacer(),
-                Icon(categoryIcons[expense.category]),
+                Icon(categoryIcons[expense.catego  ry]),
                 const SizedBox(
                   width: 6,
                 ),
@@ -29,7 +29,9 @@ class ExpenseItem extends StatelessWidget {
             )
           ],
         ),
+
       ),
+
     );
   }
 }

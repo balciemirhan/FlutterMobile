@@ -34,7 +34,7 @@ class _ExpensesPageState extends State<ExpensesPage> {
                   child: ExpenseItem(widget.expenses[index]),
                   onDismissed: (direction) {
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                      backgroundColor: Colors.black,
+                      backgroundColor: Colors.red,
                       content: Text(
                           style: Theme.of(context).textTheme.bodyLarge,
                           "Başarı ile ${widget.expenses[index].name} silindi"),
